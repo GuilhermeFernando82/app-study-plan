@@ -1,0 +1,125 @@
+.pageContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: -16px;
+  justify-content: center;
+  background: radial-gradient(
+      1200px 600px at 10% 10%,
+      rgba(99, 102, 241, 0.12),
+      transparent
+    ),
+    linear-gradient(180deg, #051025 0%, #081426 100%);
+  padding: 0 20px;
+}
+
+/* CARD AUMENTADO */
+.mainContent {
+  width: 100%;
+  max-width: 600px; /* AQUI A MÁGICA */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 35px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* TITULOS */
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* INPUTS GRANDES */
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.inputIcon {
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.inputFieldWithIcon {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+/* BOTÕES MAIORES */
+.button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.loginButton {
+  background: #6366f1;
+}
+
+.loginButton:hover {
+  background: #5257e8;
+}
+
+.registerButton {
+  background: #10b981;
+}
+
+.registerButton:hover {
+  background: #0ca56f;
+}
+
+/* MENSAGENS */
+.messageBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.errorBox {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.successBox {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.messageText {
+  font-size: 14px;
+}
